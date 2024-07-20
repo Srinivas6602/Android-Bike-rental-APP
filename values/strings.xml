@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Ride Now</string>
+    <string name="cycle_rental">CYCLE RENTAL</string>
+    <string name="title_activity_admin_main">Admin</string>
+    <string name="title_activity_user_main">User</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Batman</string>
+    <string name="nav_header_subtitle">Batman@iitrpr.ac.in</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_map_user">Map</string>
+    <string-array name="cycle_problem">
+        <item>Tire puncture</item>
+        <item>Brakes failed</item>
+        <item>Chain problem</item>
+        <item>Seat problem</item>
+        <item>Stand problem</item>
+        <item>Tire air problem</item>
+        <item>Brakes problem</item>
+
+    </string-array>
+    <string name="problem">SELECT YOUR PROBLEM HERE</string>
+    <string name="forgot_pass_username_waiting"><![CDATA[UserName: <waiting>]]></string>
+    <string name="forgot_pass_password_waiting"><![CDATA[Password: <waiting>]]></string>
+</resources>

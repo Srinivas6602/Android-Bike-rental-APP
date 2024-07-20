@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="groupfour.software.bikerentalapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".admin.AdminLocation"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".user.StartRide" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".user.MapUser"
+            android:label="@string/title_activity_map_user"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".user.StopRent"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".user.RentCycle"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".user.PastTrips"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".user.RideCycle"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".user.Feedback"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".user.UserBaseActivity"
+            android:label="@string/title_activity_user_main"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity android:name=".login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.Signup"
+            android:parentActivityName=".login.LoginActivity" />
+        <activity
+            android:name=".login.OTP"
+            android:parentActivityName=".login.LoginActivity" />
+        <activity
+            android:name=".login.ChangePasswordActivity"
+            android:parentActivityName=".login.LoginActivity" />
+        <activity
+            android:name=".admin.AdminBaseActivity"
+            android:label="@string/title_activity_admin_main"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".admin.AdminCycle"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".admin.AdminTransfer"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".admin.AdminComplaint"
+            android:theme="@style/ActionBarAnti" />
+        <activity
+            android:name=".admin.AdminResolveComplaint"
+            android:parentActivityName=".admin.AdminComplaint" />
+        <activity
+            android:name=".login.ForgotPasswordActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+    </application>
+
+</manifest>
